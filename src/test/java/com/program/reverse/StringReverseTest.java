@@ -18,7 +18,7 @@ public class StringReverseTest {
             "abc, cba",
             "abcde, edcba" })
     public void whenWithAnnotationProvidedParams_StringReverse(String input, String expectedValue) {
-        assertEquals(expectedValue, serviceUnderTest.StringReverse(input));
+        assertEquals(expectedValue, serviceUnderTest.StringReversal(input));
     }
 
     @Test
@@ -26,7 +26,7 @@ public class StringReverseTest {
             "abc123def456, abc321def654",
             "abc123def456, abc321def654" })
     public void whenWithAnnotationProvidedParams_AlphanumericReverse(String input, String expectedValue) {
-        assertEquals(expectedValue, serviceUnderTest.AlphanumbericReverse(input));
+        assertEquals(expectedValue, serviceUnderTest.AlphaNumericReverse(input));
     }
 
 

@@ -6,14 +6,14 @@ import java.util.stream.Stream;
 
 public class StringReverse {
 
-    public String AlphanumbericReverse(String input) {
+    public String AlphaNumericReverse(String input) {
         String result = Pattern.compile("\\d+")
                 .matcher(input)
                 .replaceAll(m -> new StringBuilder(m.group()).reverse().toString());
         return result;
     }
 
-    public  String StringReverse(String string) {
+    public  String StringReversal(String string) {
         return Stream.of(string)
                 .map(word->new StringBuilder(word).reverse())
                 .collect(Collectors.joining(" "));
