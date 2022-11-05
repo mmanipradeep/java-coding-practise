@@ -13,7 +13,7 @@ public class StringReverse {
         return result;
     }
 
-    public  String StringReversal(String string) {
+    public  String StringReverse(String string) {
         return Stream.of(string)
                 .map(word->new StringBuilder(word).reverse())
                 .collect(Collectors.joining(" "));
