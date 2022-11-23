@@ -10,8 +10,8 @@ Parrent p = new Parrent();
         FirstChild fc = new FirstChild();
 
         List<? extends Parrent> list = new ArrayList<>();
-        list.add(p); //- should not work
-        list.add(sc); //= work
-        list.add(fc); //= work
+       // list.add(p); //- should not work
+        //list.add(sc); //= work
+        //list.add(fc); //= work
     }
 }
