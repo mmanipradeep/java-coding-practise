@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-//public class VirtualThread {
+public class VirtualThread {
 //
 //    public static void main(String[] args) throws InterruptedException{
 //       // https://medium.com/javarevisited/how-to-use-java-19-virtual-threads-c16a32bad5f7
@@ -40,4 +40,4 @@ import java.util.concurrent.TimeUnit;
 //            System.out.println(threadInfo.length + " os thread");
 //        }, 1, 1, TimeUnit.SECONDS);
 //    }
-//}
+}

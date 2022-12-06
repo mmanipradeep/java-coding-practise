@@ -70,11 +70,12 @@ EmployeeRecordsRecords.stream()
                 .sorted(Comparator.comparing(EmployeeRecord::yearOfJoining)).findFirst();
         System.out.println(mostWorkingExpEmp.get());
 
-        Map<String, List<EmployeeRecord>> EmployeeRecordsRecordsDepartmentList = EmployeeRecordsRecords.stream()
+        Map<String, List<EmployeeRecord>> EmployeeRecordsRecordsDepartmentList =
+                EmployeeRecordsRecords.stream()
                 .collect(Collectors.groupingBy(EmployeeRecord::department));
-        Set<Map.Entry<String, List<EmployeeRecord>>> entriess = EmployeeRecordsRecordsDepartmentList.entrySet();
-        for(Map.Entry<String, List<EmployeeRecord>> entry : entriess)
-        {
+        Set<Map.Entry<String, List<EmployeeRecord>>> entriess =
+                EmployeeRecordsRecordsDepartmentList.entrySet();
+        for(Map.Entry<String, List<EmployeeRecord>> entry : entriess) {
 
             System.out.println("Department : "+ entry.getKey());
             System.out.println("------------------------------------");
