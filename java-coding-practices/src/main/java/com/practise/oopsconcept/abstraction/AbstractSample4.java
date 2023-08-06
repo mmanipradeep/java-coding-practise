@@ -23,6 +23,9 @@ public abstract class AbstractSample4 {
 	 * • It is not necessary to add the abstract methods only in the super most
 	 * class, we can add more abstract methods in the sub-classes.
 	 * 
+	 * 
+	 * EnumSet is abstract Class in JDK
+	 * 
 	 */
 
 	void method1() {
