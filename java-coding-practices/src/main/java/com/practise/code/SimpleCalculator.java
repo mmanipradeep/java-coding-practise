@@ -1,4 +1,4 @@
-package com.example.code;
+package com.practise.code;
 
 public class SimpleCalculator {
 	
